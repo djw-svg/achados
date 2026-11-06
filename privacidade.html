@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade</title>
+<meta name="description" content="Política de Privacidade da Automação Essencial e do aplicativo Essencial Pins.">
+<style>
+  :root { --bg:#faf8f5; --ink:#1f2328; --quiet:#5b6169; --accent:#0f6b5c; --line:#e4e0da; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 40px; }
+  h1 { font-size: 1.9rem; line-height:1.2; margin:0 0 6px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 6px; }
+  h3 { font-size: 1rem; margin: 20px 0 4px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 20px; }
+  .meta { color: var(--quiet); margin-bottom: 24px; }
+  a { color: var(--accent); }
+  hr { border:0; border-top:1px solid var(--line); margin:44px 0; }
+  footer { border-top:1px solid var(--line); margin-top:40px; padding-top:16px; font-size:.9rem; color:var(--quiet); }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Automação Essencial</a></p>
+  <h1>Política de Privacidade</h1>
+  <p class="meta">Automação Essencial e aplicativo Essencial Pins · Última atualização: 5 de novembro de 2026</p>
+
+  <p>Esta política explica quais dados o aplicativo <strong>Essencial Pins</strong>, operado pela <strong>Automação Essencial</strong> (Igrejinha, Rio Grande do Sul, Brasil), coleta, como usa, onde guarda e como protege, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+
+  <h2>1. O que o aplicativo faz</h2>
+  <p>O Essencial Pins é uma ferramenta de uso próprio que publica pins de produtos na conta do Pinterest da Automação Essencial. Ele não é oferecido ao público e não acessa contas de outras pessoas.</p>
+
+  <h2>2. Dados do Pinterest que acessamos</h2>
+  <p>Com a autorização dada pelo login oficial do Pinterest (OAuth), o aplicativo acessa apenas:</p>
+  <ul>
+    <li><strong>Token de acesso</strong> e token de renovação, para agir em nome da nossa conta.</li>
+    <li><strong>Lista de pastas</strong> (nome e identificador), para escolher onde publicar.</li>
+    <li><strong>Pins criados pelo aplicativo</strong> (identificador, link e métricas como impressões e cliques), para acompanhar resultados.</li>
+  </ul>
+  <p>Permissões solicitadas: <code>boards:read</code>, <code>pins:read</code> e <code>pins:write</code>. Não acessamos mensagens, seguidores, dados de outros usuários nem informações de pagamento.</p>
+
+  <h2>3. Como usamos esses dados</h2>
+  <ul>
+    <li>Publicar pins com imagem, título, descrição e link do produto.</li>
+    <li>Registrar quais pins foram publicados e medir seu desempenho.</li>
+  </ul>
+  <p>Não vendemos, alugamos nem compartilhamos dados do Pinterest com terceiros para publicidade ou qualquer outro fim.</p>
+
+  <h2>4. Serviços que processam dados</h2>
+  <ul>
+    <li><strong>n8n</strong> (ferramenta de automação): executa as publicações e guarda os tokens de forma criptografada.</li>
+    <li><strong>Google Planilhas</strong>: guarda a lista de produtos e os identificadores dos pins publicados.</li>
+    <li><strong>OpenAI</strong>: recebe somente o nome e a foto do produto para gerar texto e imagem. Nenhum dado do Pinterest é enviado a ela.</li>
+  </ul>
+
+  <h2>5. Armazenamento e segurança</h2>
+  <p>Os tokens ficam armazenados criptografados no n8n e nunca são publicados em planilhas, sites ou mensagens. O acesso às ferramentas é protegido por senha e restrito ao responsável pela Automação Essencial.</p>
+
+  <h2>6. Por quanto tempo guardamos</h2>
+  <p>Os tokens são mantidos enquanto a conexão estiver ativa e apagados quando ela é desfeita. Registros de pins publicados são mantidos enquanto forem úteis para medir resultados e podem ser apagados a qualquer momento.</p>
+
+  <h2>7. Como desfazer a conexão e pedir exclusão</h2>
+  <p>A autorização pode ser revogada a qualquer momento no Pinterest, em <strong>Configurações → Segurança e logins → Apps conectados</strong>. Para pedir a exclusão de dados ou tirar dúvidas, escreva para <a href="mailto:SEU_EMAIL_AQUI">SEU_EMAIL_AQUI</a>. Respondemos em até 15 dias.</p>
+
+  <h2>8. Alterações</h2>
+  <p>Se esta política mudar, a nova versão será publicada nesta página com a data atualizada.</p>
+
+  <hr>
+
+  <h2 lang="en">Privacy Policy (English summary)</h2>
+  <div lang="en">
+    <p><strong>Essencial Pins</strong> is an internal tool operated by <strong>Automação Essencial</strong> (Igrejinha, RS, Brazil) that publishes product Pins to our own Pinterest account.</p>
+    <h3>Data accessed</h3>
+    <p>Through Pinterest's official OAuth flow, with the scopes <code>boards:read</code>, <code>pins:read</code> and <code>pins:write</code>, we access only: access and refresh tokens; our board names and IDs; and the Pins created by the app (ID, link, and metrics such as impressions and clicks).</p>
+    <h3>Use</h3>
+    <p>This data is used only to create Pins on our account and to measure their performance. We do not sell, rent or share Pinterest data with third parties.</p>
+    <h3>Storage and security</h3>
+    <p>Tokens are stored encrypted in our n8n automation server and are never exposed in spreadsheets or public pages. Pin IDs are logged in a private Google Sheet. OpenAI receives only product names and photos to generate text and images; no Pinterest data is sent to it.</p>
+    <h3>Retention and deletion</h3>
+    <p>Tokens are kept while the connection is active and deleted when it is revoked. Access can be revoked at any time in Pinterest under Settings → Security and logins → Connected apps. For deletion requests or questions, contact <a href="mailto:SEU_EMAIL_AQUI">SEU_EMAIL_AQUI</a>.</p>
+  </div>
+
+  <footer>© 2026 Automação Essencial</footer>
+</main>
+</body>
+</html>
